@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_orange_dark">
+
+    <com.inagata.appsm.DragRelativeLayout
+        android:id="@+id/backgroundFrameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:longClickable="true"
+                android:text="Touch To Select"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </com.inagata.appsm.DragRelativeLayout>
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/bt_deleteText"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/backgroundFrameText"
+        android:src="@drawable/btn_erase" />
+</RelativeLayout>
